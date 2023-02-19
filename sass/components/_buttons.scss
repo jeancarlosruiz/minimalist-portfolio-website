@@ -2,32 +2,65 @@
 
 .button {
   // Some default removed from the btn.
-  display: inline-flex;
+  display: flex;
+  align-items: center;
   cursor: pointer;
   text-decoration: none;
   text-transform: uppercase;
   line-height: 1;
   border: 0;
-  transition: 275ms ease;
-  padding: 1.125em 2em;
-  font-weight: $fw-700;
+  font-family: $ff-accent;
+  font-weight: $fw-400;
+  font-size: size(12);
+  letter-spacing: size(2);
+}
 
-  &[data-type='accent'] {
-    background-color: clr(primary, 400);
-    color: clr(neutral, 900);
+.button[data-type='primary'] {
+  width: size(200);
+  background-color: clr(primary, 700);
+  color: clr(neutral, 100);
+  gap: size(30);
+
+  .icon {
+    padding: size(16);
+    background-color: hsl(204, 41%, 19%);
   }
 
-  &[data-type='outline'] {
-    --outline-size: 5px;
-
-    background: transparent;
-    outline: var(--outline-size) solid clr(neutral, 100);
-    outline-offset: calc(var(--outline-size) * -1);
-    color: clr(neutral, 100);
+  .title {
+    display: inline-flex;
   }
 
   &:is(:hover, :focus) {
-    background-color: clr(neutral, 100);
-    color: clr(neutral, 900);
+    background-color: clr(primary, 400);
+
+    .icon {
+      background-color: hsl(167deg 31% 49%);
+    }
+
+    svg g {
+      stroke: clr(neutral, 100);
+    }
   }
 }
+
+.button[data-type='secondary'] {
+  --outline-size: 2px;
+
+  background-color: transparent;
+  outline: var(--outline-size) solid clr(primary, 900);
+  color: clr(primary, 900);
+  padding-block: size(18);
+  padding-inline: size(32);
+
+  &:is(:hover, :focus) {
+    background-color: clr(primary, 900);
+    color: clr(neutral, 100);
+  }
+}
+
+// .button[disabled='true'] {
+//   --outline-size: 2px;
+
+//   background-color: transparent;
+//   outline: var(--outline-size) solid clr(primary, 900);
+// }

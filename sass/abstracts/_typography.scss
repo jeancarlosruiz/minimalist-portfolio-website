@@ -1,8 +1,35 @@
 // Diferentes font-sizes que tendran lugar en el folder utilities para crear clases que podremos usar dentro de nuestro html.
 
+// Ibarra-Real
+
+@font-face {
+  font-family: 'IbarraReal';
+  font-weight: 400;
+  src: url('/assets/fonts/Ibarra-Real-Nova/IbarraReal-regular.woff2')
+      format('woff2'),
+    url('/assets/fonts/Ibarra-Real-Nova/IbarraReal-regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'IbarraReal';
+  font-weight: 700;
+  src: url('/assets/fonts/Ibarra-Real-Nova/IbarraReal-bold.woff2')
+      format('woff2'),
+    url('/assets/fonts/Ibarra-Real-Nova/IbarraReal-bold.woff') format('woff');
+}
+
+// Public Sans
+
+@font-face {
+  font-family: 'PublicSans';
+  font-weight: 400;
+  src: url('/assets/fonts/Public-Sans/PublicSans.woff2') format('woff2'),
+    url('/assets/fonts/Public-Sans/PublicSans.woff') format('woff');
+}
+
 // Font-family
-$ff-sans: 'Lato', sans-serif;
-$ff-serif: 'Abril Fatface', serif;
+$ff-sans: 'IbarraReal', sans-serif;
+$ff-serif: 'PublicSans', sans-serif;
 
 $ff-base: $ff-sans;
 $ff-accent: $ff-serif;
@@ -10,19 +37,15 @@ $ff-accent: $ff-serif;
 //Font-sizes
 
 $font-sizes: (
-  900: clamp(2.5rem, 0.5rem + 10vw, 5rem),
-  800: clamp(2.5rem, 0.5rem + 7vw, 3.75rem),
-  600: clamp(1.4rem, 0.5rem + 3vw, 1.6875rem),
-  500: 1.3125rem,
-  400: 1.125rem,
-  300: 1rem,
+  900: clamp(2.5rem, 1.7857rem + 1.4881vw, 3.125rem),
+  800: 2.5rem,
+  600: 2rem,
+  500: 1rem,
+  400: clamp(0.9375rem, 0.8661rem + 0.1488vw, 1rem),
+  300: 0.938rem,
 );
 
 //Font-weights
 
 $fw-400: 400;
-$fw-500: 500;
-$fw-600: 600;
 $fw-700: 700;
-$fw-800: 800;
-$fw-900: 900;

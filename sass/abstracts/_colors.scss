@@ -2,13 +2,19 @@
 
 $colors: (
   neutral: (
-    900: #212121,
-    400: #5c5c5c,
-    200: #f8f8f8,
-    100: #ffffff,
+    // Bright Red (Errors)
+    400: hsl(0, 90%, 57%),
+    // Light Grey (Text Field)
+    200: hsl(240, 2%, 92%),
+    // Very Light Grey (BG)
+    100: hsl(0, 0%, 98%),
   ),
   primary: (
-    400: #ff6635,
-    500: #dd4e11,
+    // Slightly Desaturated Cyan
+    400: hsl(167, 36%, 54%),
+    // Dark Blue
+    700: hsl(205, 41%, 21%),
+    // Grayish Dark Blue
+    900: hsl(245, 10%, 22%),
   ),
 );
