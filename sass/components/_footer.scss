@@ -1,0 +1,55 @@
+@use '../abstracts/' as *;
+
+.footer {
+  font-family: $ff-serif;
+  padding-block: size(56);
+
+  @include mq(medium) {
+    padding-block: size(24);
+  }
+
+  @include mq(large) {
+    padding-block: size(32);
+  }
+}
+
+.footer-nav {
+  .nav-links {
+    --flex-row-gap: #{size(32)};
+
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--flex-row-gap, $flex-group-gap);
+    column-gap: var(--flex-column-gap, $flex-group-gap);
+    letter-spacing: size(2);
+    text-align: center;
+    font-size: size(12);
+    transition: all 200ms ease-in;
+
+    & li {
+      transition: all 275ms ease-in;
+      color: clr(neutral, 100);
+      cursor: pointer;
+    }
+
+    & li:is(:hover, :focus) {
+      color: clr(primary, 400);
+    }
+
+    @include mq(medium) {
+      --flex-column-gap: #{size(42)};
+
+      flex-direction: row;
+    }
+  }
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: size(16);
+
+  svg:is(:hover, :focus) path {
+    fill: clr(primary, 400);
+  }
+}

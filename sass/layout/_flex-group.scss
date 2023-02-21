@@ -9,9 +9,29 @@
 }
 
 .flex-group-2 {
+  --flex-gap: #{size(40)};
+
   display: flex;
-  flex-wrap: wrap;
-  column-gap: var(--flex-column-gap, $flex-group-gap);
-  row-gap: var(--flex-row-gap, calc($flex-group-gap) / 2);
-  width: fit-content;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--flex-gap, $flex-group-gap);
+
+  @include mq(medium) {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
+
+.flex-group-3 {
+  --flex-gap: #{size(40)};
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--flex-gap, $flex-group-gap);
+
+  @include mq(medium) {
+    --flex-gap: #{size(48)};
+    flex-direction: row;
+  }
 }
