@@ -1,0 +1,31 @@
+@use '../abstracts/' as *;
+
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: size(24);
+  padding-block-start: size(40);
+
+  h1 {
+    letter-spacing: -0.36px;
+  }
+
+  @include mq(medium) {
+    .hero-info {
+      position: absolute;
+      background-color: clr(neutral, 100);
+      width: 32.125rem;
+      padding-block-start: size(56);
+      padding-inline-end: size(56);
+      bottom: 0;
+    }
+  }
+
+  @include mq(large) {
+    .hero-info {
+      width: 27.813rem;
+      padding-inline-end: size(55);
+    }
+  }
+}

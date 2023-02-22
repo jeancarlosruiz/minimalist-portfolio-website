@@ -26,10 +26,6 @@
     background-color: hsl(204, 41%, 19%);
   }
 
-  .title {
-    display: inline-flex;
-  }
-
   &:is(:hover, :focus) {
     background-color: clr(primary, 400);
 

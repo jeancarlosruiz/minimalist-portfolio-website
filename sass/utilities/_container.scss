@@ -1,7 +1,7 @@
 @use '../abstracts/' as *;
 
 .container {
-  width: calc(100% - #{size(32)});
+  width: calc(100% - #{size(64)});
   max-width: $container-max-width;
 
   @include mq(medium) {
