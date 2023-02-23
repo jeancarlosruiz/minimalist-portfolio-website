@@ -104,7 +104,11 @@
           </a>
         </div>
       </section>
-      <section id="aboutMe" class="about-me | container mx-auto">
+      <article
+        id="aboutMe"
+        data-type="about"
+        class="grid-article | container mx-auto"
+      >
         <picture>
           <source
             media="(max-width:719px)"
@@ -131,7 +135,7 @@
             alt="Alex Spencer"
           />
         </picture>
-        <article>
+        <div class="article-info">
           <h2 class="fs-800 fw-bold">About Me</h2>
           <p class="fs-500 ff-accent fw-regular">
             I’m a junior front-end developer looking for a new role in an
@@ -146,10 +150,9 @@
           <a href="/" role="button" class="button" data-type="secondary">
             Go to Portfolio
           </a>
-        </article>
-      </section>
-
-      <section class="homepage-contact-me | container mx-auto">
+        </div>
+      </article>
+      <section class="shortcut-contact-me | container mx-auto">
         <h2 class="fs-800 fw-bold">Interested in doing a project together?</h2>
         <div></div>
         <a href="/" role="button" class="button" data-type="secondary">
@@ -247,31 +250,6 @@
         </nav>
       </div>
     </footer>
-    <!-- <button class="button margin-block-end-4" data-type="primary">
-    <span class="icon">
-      <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="16"
-      height="14"
-      fill="#305a51"
-      role="img"
-      aria-describedby="arrowsDown"
-      >
-      <title id="arrowsDown">Arrows Down</title>
-      <g fill="none" fill-rule="evenodd" stroke="#5FB4A2">
-        <path d="M0 9l8 4 8-4" />
-        <path opacity=".5" d="M0 5l8 4 8-4" />
-        <path opacity=".25" d="M0 1l8 4 8-4" />
-      </g>
-    </svg>
-  </span>
-  <span class="title">About Me</span>
-</button>
-<button class="button" data-type="secondary">Contact Me</button> -->
-    <!-- 
-  
-  
-   -->
     <script type="module" src="/main.js"></script>
   </body>
 </html>

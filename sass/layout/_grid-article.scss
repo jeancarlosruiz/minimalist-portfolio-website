@@ -1,0 +1,49 @@
+@use '../abstracts/' as *;
+
+.grid-article {
+  --grid-gap: #{size(32)};
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  gap: var(--grid-gap, $grid-group-gap);
+  grid-template-areas:
+    'a'
+    'b';
+
+  @include mq(medium) {
+    --grid-gap: #{size(70)};
+
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: 'a b';
+
+    &:nth-of-type(even) {
+      grid-template-areas: 'b a';
+    }
+  }
+
+  @include mq(large) {
+    --grid-gap: #{size(125)};
+  }
+}
+
+.grid-article[data-type='about'] {
+  padding-block-start: size(96);
+
+  img {
+    height: 100%;
+  }
+}
+
+.grid-article[data-type='portfolio'] {
+  picture {
+    align-self: center;
+  }
+
+  @include mq(large) {
+    picture {
+      align-self: normal;
+    }
+  }
+}

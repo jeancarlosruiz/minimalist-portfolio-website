@@ -1,0 +1,18 @@
+@use '../abstracts/' as *;
+
+.grid-portfolio {
+  --grid-gap: #{size(72)};
+
+  padding-block-start: size(40);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--grid-gap, $grid-group-gap);
+
+  @include mq(medium) {
+    --grid-gap: #{size(88)};
+  }
+
+  @include mq(large) {
+    --grid-gap: #{size(80)};
+  }
+}
