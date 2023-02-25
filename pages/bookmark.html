@@ -8,7 +8,7 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="images/favicon-32x32.png"
+      href="/assets/images/favicon-32x32.png"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -52,6 +52,161 @@
     </header>
     <!-- MAIN -->
     <main>
+      <div class="projects-hero | container mx-auto">
+        <h1 class="visually-hidden">(Only for screen readers)</h1>
+        <picture>
+          <source
+            media="(max-width:719px)"
+            srcset="
+              /assets/images/detail/mobile/image-bookmark-hero.jpg    300w,
+              /assets/images/detail/mobile/image-bookmark-hero@2x.jpg
+            "
+          />
+          <source
+            media="(max-width:960px)"
+            srcset="
+              /assets/images/detail/tablet/image-bookmark-hero.jpg    750w,
+              /assets/images/detail/tablet/image-bookmark-hero@2x.jpg
+            "
+          />
+          <source
+            srcset="
+              /assets/images/detail/desktop/image-bookmark-hero.jpg    1110w,
+              /assets/images/detail/desktop/image-bookmark-hero@2x.jpg
+            "
+          />
+          <img
+            src="/assets/images/detail/desktop/image-bookmark-hero.jpg"
+            alt="Bookmark"
+          />
+        </picture>
+      </div>
+      <section class="grid-projects | container mx-auto">
+        <article class="article-projects-info grid-projects-intro">
+          <h2 class="fs-800 fw-bold">Bookmark</h2>
+          <p class="fs-500 ff-accent fw-regular">
+            This project required me to build a fully responsive landing page to
+            the designs provided. I used HTML5, along with CSS Grid and
+            JavaScript for the areas that required interactivity, such as the
+            features section.
+          </p>
+          <div class="clr-primary-400">
+            <span class="fs-200 ff-accent fw-bold">
+              Interaction Design / Front End Development
+            </span>
+            <span class="fs-200 ff-accent fw-bold">HTML / CSS / JS</span>
+          </div>
+          <a href="#" role="button" class="button" data-type="secondary">
+            Visit Website
+          </a>
+        </article>
+        <article class="article-projects-preview">
+          <div>
+            <h3 class="fs-600 margin-block-end-32">Project Background</h3>
+            <p class="fs-300 ff-accent fw-regular">
+              This project was a front-end challenge from Frontend Mentor. It’s
+              a platform that enables you to practice building websites to a
+              design and project brief. Each challenge includes mobile and
+              desktop designs to show how the website should look at different
+              screen sizes. Creating these projects has helped me refine my
+              workflow and solve real-world coding problems. I’ve learned
+              something new with each project, helping me to improve and adapt
+              my style.
+            </p>
+          </div>
+          <div class="padding-block-start-40 padding-block-end-40">
+            <h3 class="fs-600 margin-block-end-32">Static Previews</h3>
+            <picture class="margin-block-end-32">
+              <source
+                media="(max-width:719px)"
+                srcset="
+                  /assets/images/detail/mobile/image-bookmark-preview-1.jpg    300w,
+                  /assets/images/detail/mobile/image-bookmark-preview-1@2x.jpg
+                "
+              />
+              <source
+                media="(max-width:960px)"
+                srcset="
+                  /assets/images/detail/tablet/image-bookmark-preview-1.jpg    750w,
+                  /assets/images/detail/tablet/image-bookmark-preview-1@2x.jpg
+                "
+              />
+              <source
+                srcset="
+                  /assets/images/detail/desktop/image-bookmark-preview-1.jpg    1110w,
+                  /assets/images/detail/desktop/image-bookmark-preview-1@2x.jpg
+                "
+              />
+              <img
+                src="/assets/images/detail/desktop/image-bookmark-preview-1.jpg"
+                alt="Bookmark Preview 1"
+              />
+            </picture>
+            <picture>
+              <source
+                media="(max-width:719px)"
+                srcset="
+                  /assets/images/detail/mobile/image-bookmark-preview-2.jpg    300w,
+                  /assets/images/detail/mobile/image-bookmark-preview-2@2x.jpg
+                "
+              />
+              <source
+                media="(max-width:960px)"
+                srcset="
+                  /assets/images/detail/tablet/image-bookmark-preview-2.jpg    750w,
+                  /assets/images/detail/tablet/image-bookmark-preview-2@2x.jpg
+                "
+              />
+              <source
+                srcset="
+                  /assets/images/detail/desktop/image-bookmark-preview-2.jpg    1110w,
+                  /assets/images/detail/desktop/image-bookmark-preview-2@2x.jpg
+                "
+              />
+              <img
+                src="/assets/images/detail/desktop/image-bookmark-preview-2.jpg"
+                alt="Bookmark Preview 2"
+              />
+            </picture>
+          </div>
+        </article>
+      </section>
+      <div class="projects-nav | container mx-auto">
+        <a href="manage.html">
+          <div class="flex-group-5 left">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="10"
+              height="16"
+              aria-describedby="arrow-left"
+            >
+              <title id="arrow-left">Arrow Left</title>
+              <path fill="none" stroke="#33323D" d="M9 0L1 8l8 8" />
+            </svg>
+            <div>
+              <h3 class="fs-600">Manage</h3>
+              <span class="fs-300 ff-accent fw-regular">Previous Project</span>
+            </div>
+          </div>
+        </a>
+        <a href="insure.html">
+          <div class="flex-group-5 right">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="10"
+              height="16"
+              aria-describedby="arrow-right"
+            >
+              <title id="arrow-right">Arrow right</title>
+              <path fill="none" stroke="#33323D" d="M1 0l8 8-8 8" />
+            </svg>
+            <div>
+              <h3 class="fs-600">Insure</h3>
+              <span class="fs-300 ff-accent fw-regular">Next Project</span>
+            </div>
+          </div>
+        </a>
+      </div>
       <section class="shortcut-contact-me | container mx-auto">
         <h2 class="fs-800 fw-bold">Interested in doing a project together?</h2>
         <div></div>
@@ -150,41 +305,6 @@
         </nav>
       </div>
     </footer>
-    <!--   
-  
-  Bookmark
-  
-  This project required me to build a fully responsive landing page to the designs 
-  provided. I used HTML5, along with CSS Grid and JavaScript for the areas that 
-  required interactivity, such as the features section.
-  
-  Interaction Design / Front End Development
-  
-  HTML / CSS / JS
-  
-  Visit Website
-  
-  Project Background
-  
-  This project was a front-end  challenge from Frontend Mentor. It’s a platform that 
-  enables you to practice building websites to a design and project brief. Each challenge 
-  includes mobile and desktop designs to show how the website should look at different 
-  screen sizes. Creating these projects has helped me refine my workflow and solve 
-  real-world coding problems. I’ve learned something new with each project, helping 
-  me to improve and adapt my style.
-  
-  Static Previews
-  
-  Manage
-  Previous Project
-  
-  Insure
-  Next Project
-  
-  Interested in doing a project together?
-  
-  Contact Me -->
-
     <script type="module" src="/main.js"></script>
   </body>
 </html>

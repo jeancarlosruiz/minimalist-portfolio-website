@@ -1,0 +1,58 @@
+@use '../abstracts/' as *;
+
+.grid-projects-intro {
+  --grid-row-gap: #{size(24)};
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas:
+    'a'
+    'b'
+    'c'
+    'd';
+  row-gap: var(--grid-row-gap, $grid-group-gap);
+
+  h2 {
+    grid-area: a;
+  }
+  p {
+    grid-area: b;
+  }
+  div {
+    grid-area: c;
+  }
+  a {
+    grid-area: d;
+  }
+
+  @include mq(medium) {
+    --grid-row-gap: #{size(16)};
+    --grid-column-gap: #{size(68)};
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+      'a b'
+      'c b'
+      'd b';
+    row-gap: var(--grid-row-gap, $grid-group-gap);
+    column-gap: var(--grid-column-gap, $grid-group-gap);
+  }
+
+  @include mq(large) {
+    --grid-row-gap: #{size(16)};
+    --grid-column-gap: #{size(32)};
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+      'a'
+      'b'
+      'c'
+      'd';
+    row-gap: var(--grid-row-gap, $grid-group-gap);
+  }
+}

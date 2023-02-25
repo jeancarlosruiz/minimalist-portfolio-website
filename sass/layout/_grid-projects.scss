@@ -1,0 +1,40 @@
+@use '../abstracts/' as *;
+
+// .grid-projects {
+//   display: grid;
+//   grid-template-columns: 1fr;
+//   grid-template-rows: repeat(2, auto);
+
+//   p,
+//   span {
+//     opacity: 0.8;
+//   }
+
+//   @include mq(large) {
+//     grid-template-columns: repeat(2, 1fr);
+//     grid-template-rows: 1fr auto;
+
+//     .article-projects-info {
+//       grid-row: 1 /2;
+//     }
+//   }
+// }
+
+.grid-projects {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  p,
+  span {
+    opacity: 0.8;
+  }
+
+  @include mq(large) {
+    flex-direction: row;
+    gap: 125px;
+    .article-projects-info {
+      height: fit-content;
+    }
+  }
+}

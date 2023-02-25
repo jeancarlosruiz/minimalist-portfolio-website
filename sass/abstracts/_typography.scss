@@ -43,6 +43,7 @@ $font-sizes: (
   500: 1rem,
   400: clamp(0.9375rem, 0.8661rem + 0.1488vw, 1rem),
   300: 0.938rem,
+  200: clamp(0.8125rem, 0.6923rem + 0.5128vw, 1rem),
 );
 
 //Font-weights
