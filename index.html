@@ -16,8 +16,8 @@
   <body>
     <!-- HEADER -->
     <header class="header">
-      <div class="container | flex-group-1 mx-auto">
-        <a href="index.html">
+      <div class="nav | container flex-group-1 mx-auto">
+        <a class="logo" href="index.html">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="60"
@@ -34,18 +34,22 @@
           </svg>
           <span class="visually-hidden">(TO HOME PAGE)</span>
         </a>
+        <nav class="header-nav">
+          <ul class="nav-links uppercase">
+            <li><a class="nav-link" href="index.html">Home</a></li>
+            <li>
+              <a class="nav-link" href="pages/portfolio.html">Portfolio</a>
+            </li>
+            <li>
+              <a class="nav-link" href="pages/contact.html">Contact Me</a>
+            </li>
+          </ul>
+        </nav>
         <a class="hamburger-btn" href="#">
           <span class="bar"></span>
           <span class="bar"></span>
           <span class="bar"></span>
         </a>
-        <nav class="header-nav">
-          <ul class="nav-links uppercase">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="pages/portfolio.html">Portfolio</a></li>
-            <li><a href="pages/contact.html">Contact Me</a></li>
-          </ul>
-        </nav>
       </div>
     </header>
     <!-- MAIN -->
@@ -82,7 +86,12 @@
           <h1 class="fs-900 fw-bold ff-base">
             Hey, I’m Alex Spencer and I love building beautiful websites
           </h1>
-          <a href="#aboutMe" class="button" data-type="primary" role="button">
+          <a
+            href="#section1"
+            class="button scroll-btn"
+            data-type="primary"
+            role="button"
+          >
             <span class="icon">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -104,59 +113,58 @@
           </a>
         </div>
       </section>
-      <article
-        id="aboutMe"
-        data-type="about"
-        class="grid-article | container mx-auto"
-      >
-        <picture>
-          <source
-            media="(max-width:719px)"
-            srcset="
-              assets/images/homepage/mobile/image-homepage-profile.jpg    300w,
-              assets/images/homepage/mobile/image-homepage-profile@2x.jpg
-            "
-          />
-          <source
-            media="(max-width:960px)"
-            srcset="
-              assets/images/homepage/tablet/image-homepage-profile.jpg    750w,
-              assets/images/homepage/tablet/image-homepage-profile@2x.jpg
-            "
-          />
-          <source
-            srcset="
-              assets/images/homepage/desktop/image-homepage-profile.jpg    1110w,
-              assets/images/homepage/desktop/image-homepage-profile@2x.jpg
-            "
-          />
-          <img
-            src="assets/images/homepage/desktop/image-homepage-profile.jpg "
-            alt="Alex Spencer"
-          />
-        </picture>
-        <div class="article-info">
-          <h2 class="fs-800 fw-bold">About Me</h2>
-          <p class="fs-500 ff-accent fw-regular">
-            I’m a junior front-end developer looking for a new role in an
-            exciting company. I focus on writing accessible HTML, using modern
-            CSS practices and writing clean JavaScript. When writing JavaScript
-            code, I mostly use React, but I can adapt to whatever tools are
-            required. I’m based in London, UK, but I’m happy working remotely
-            and have experience in remote teams. When I’m not coding, you’ll
-            find me outdoors. I love being out in nature whether that’s going
-            for a walk, run or cycling. I’d love you to check out my work.
-          </p>
-          <a
-            href="pages/portfolio.html"
-            role="button"
-            class="button"
-            data-type="secondary"
-          >
-            Go to Portfolio
-          </a>
-        </div>
-      </article>
+      <section id="section1" class="container mx-auto">
+        <article data-type="about" class="grid-article">
+          <picture>
+            <source
+              media="(max-width:719px)"
+              srcset="
+                assets/images/homepage/mobile/image-homepage-profile.jpg    300w,
+                assets/images/homepage/mobile/image-homepage-profile@2x.jpg
+              "
+            />
+            <source
+              media="(max-width:960px)"
+              srcset="
+                assets/images/homepage/tablet/image-homepage-profile.jpg    750w,
+                assets/images/homepage/tablet/image-homepage-profile@2x.jpg
+              "
+            />
+            <source
+              srcset="
+                assets/images/homepage/desktop/image-homepage-profile.jpg    1110w,
+                assets/images/homepage/desktop/image-homepage-profile@2x.jpg
+              "
+            />
+            <img
+              src="assets/images/homepage/desktop/image-homepage-profile.jpg "
+              alt="Alex Spencer"
+            />
+          </picture>
+          <div class="article-info">
+            <h2 class="fs-800 fw-bold">About Me</h2>
+            <p class="fs-500 ff-accent fw-regular">
+              I’m a junior front-end developer looking for a new role in an
+              exciting company. I focus on writing accessible HTML, using modern
+              CSS practices and writing clean JavaScript. When writing
+              JavaScript code, I mostly use React, but I can adapt to whatever
+              tools are required. I’m based in London, UK, but I’m happy working
+              remotely and have experience in remote teams. When I’m not coding,
+              you’ll find me outdoors. I love being out in nature whether that’s
+              going for a walk, run or cycling. I’d love you to check out my
+              work.
+            </p>
+            <a
+              href="pages/portfolio.html"
+              role="button"
+              class="button"
+              data-type="secondary"
+            >
+              Go to Portfolio
+            </a>
+          </div>
+        </article>
+      </section>
       <section class="shortcut-contact-me | container mx-auto">
         <h2 class="fs-800 fw-bold">Interested in doing a project together?</h2>
         <div></div>

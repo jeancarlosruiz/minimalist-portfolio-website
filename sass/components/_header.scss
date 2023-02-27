@@ -38,10 +38,9 @@
   letter-spacing: size(2);
   text-align: center;
   font-size: size(12);
-  transition: all 200ms ease-in;
 
   & li {
-    transition: all 275ms ease-in;
+    transition: all 175ms ease-in;
     color: clr(neutral, 100);
     cursor: pointer;
 

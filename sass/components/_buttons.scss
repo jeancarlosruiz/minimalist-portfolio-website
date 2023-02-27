@@ -26,7 +26,7 @@
     background-color: hsl(204, 41%, 19%);
   }
 
-  &:is(:hover, :focus) {
+  &:hover {
     background-color: clr(primary, 400);
 
     .icon {
@@ -48,16 +48,10 @@
   padding-block: size(18);
   padding-inline: size(32);
   width: fit-content;
+  transition: 275ms ease;
 
   &:is(:hover, :focus) {
     background-color: clr(primary, 900);
     color: clr(neutral, 100);
   }
 }
-
-// .button[disabled='true'] {
-//   --outline-size: 2px;
-
-//   background-color: transparent;
-//   outline: var(--outline-size) solid clr(primary, 900);
-// }
