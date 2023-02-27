@@ -21,7 +21,7 @@ const toggleClasses = function () {
 // ADDEVENT FUNCTIONALITIES //
 ///////////////////////////
 
-// Hamburger function
+// Hamburger addEventListener
 hamburgerBtn.addEventListener('click', () => {
   toggleClasses();
 });

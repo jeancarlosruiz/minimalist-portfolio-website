@@ -43,13 +43,3 @@
     }
   }
 }
-
-.nav-logo {
-  display: flex;
-  align-items: center;
-  gap: size(16);
-
-  svg:is(:hover, :focus) path {
-    fill: clr(primary, 400);
-  }
-}
