@@ -1,0 +1,10 @@
+@use '../abstracts/' as *;
+
+.section {
+  transition: 300ms ease-in;
+}
+
+.section-hidden {
+  opacity: 0;
+  transform: translateY(10rem);
+}

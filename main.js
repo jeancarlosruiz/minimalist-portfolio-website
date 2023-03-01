@@ -4,7 +4,29 @@
 ///////////////////////
 
 // Navegation mouseover element
-const nav = document.querySelector('.header-nav');
+const nav = document.querySelectorAll('.header-nav');
+
+// Revealing on scroll
+const allSections = document.querySelectorAll('.section');
+
+const revealSection = function (entries, oberserver) {
+  const [entry] = entries;
+  console.log(entry);
+
+  if (!entry.isIntersecting) return;
+  entry.target.classList.remove('section-hidden');
+  oberserver.unobserve(entry.target);
+};
+
+const sectionObserver = new IntersectionObserver(revealSection, {
+  root: null,
+  threshold: 0.15,
+});
+
+allSections.forEach(section => {
+  sectionObserver.observe(section);
+  section.classList.add('section-hidden');
+});
 
 // Smoth Scrolling
 const aboutMeBtn = document.querySelector('.scroll-btn');
@@ -42,8 +64,11 @@ const toggleClasses = function () {
 ///////////////////////////
 
 // Navegation addEventListener
-nav.addEventListener('mouseover', handleHover.bind(0.5));
-nav.addEventListener('mouseout', handleHover.bind(1));
+nav.forEach(el => {
+  el.addEventListener('mouseover', handleHover.bind(0.5));
+  console.log(el);
+});
+nav.forEach(el => el.addEventListener('mouseout', handleHover.bind(1)));
 
 // Hamburger addEventListener
 hamburgerBtn.addEventListener('click', () => {
