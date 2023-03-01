@@ -9,6 +9,20 @@ const nav = document.querySelectorAll('.header-nav');
 // Revealing on scroll
 const allSections = document.querySelectorAll('.section');
 
+// Smoth Scrolling
+const aboutMeBtn = document.querySelector('.scroll-btn');
+const section1 = document.querySelector('#section1');
+
+// Hamburger elements
+const hamburgerBtn = document.querySelector('.hamburger-btn');
+const headerNav = document.querySelector('.header-nav');
+
+//////////////////////////////////////
+// FUNCTIONS TO DO NOT REPEAT CODE //
+////////////////////////////////////
+
+// Revealing section
+
 const revealSection = function (entries, oberserver) {
   const [entry] = entries;
   console.log(entry);
@@ -27,18 +41,6 @@ allSections.forEach(section => {
   sectionObserver.observe(section);
   section.classList.add('section-hidden');
 });
-
-// Smoth Scrolling
-const aboutMeBtn = document.querySelector('.scroll-btn');
-const section1 = document.querySelector('#section1');
-
-// Hamburger elements
-const hamburgerBtn = document.querySelector('.hamburger-btn');
-const headerNav = document.querySelector('.header-nav');
-
-//////////////////////////////////////
-// FUNCTIONS TO DO NOT REPEAT CODE //
-////////////////////////////////////
 
 // opacity hover the nav function.
 const handleHover = function (e) {
@@ -64,10 +66,7 @@ const toggleClasses = function () {
 ///////////////////////////
 
 // Navegation addEventListener
-nav.forEach(el => {
-  el.addEventListener('mouseover', handleHover.bind(0.5));
-  console.log(el);
-});
+nav.forEach(el => el.addEventListener('mouseover', handleHover.bind(0.5)));
 nav.forEach(el => el.addEventListener('mouseout', handleHover.bind(1)));
 
 // Hamburger addEventListener
