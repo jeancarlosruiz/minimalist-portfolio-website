@@ -19,7 +19,7 @@
     <!-- HEADER -->
     <header class="header">
       <div class="nav | container flex-group-1 mx-auto">
-        <a href="../index.html">
+        <a class="logo" href="../index.html">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="60"
@@ -128,45 +128,55 @@
         </article>
         <div class="contact-me grid-contact">
           <h2 class="fs-800 fw-bold">Contact Me</h2>
-          <form class="contact-me-form" action="">
-            <div class="input-control">
-              <label class="input-control-label" for="userName">Name</label>
-              <input
-                class="input-control-input"
-                autocomplete="off"
-                id="userName"
-                type="text"
-                placeholder="Jane Appleseed"
-              />
-              <p class="error"></p>
-            </div>
-            <div class="input-control">
-              <label class="input-control-label" for="email"
-                >Email Address</label
-              >
-              <input
-                class="input-control-input"
-                autocomplete="off"
-                id="email"
-                type="email"
-                placeholder="email@example.com"
-              />
-              <p class="error"></p>
-            </div>
-            <div class="input-control">
-              <label class="input-control-label" for="message">Message</label>
-              <textarea
-                class="input-control-input"
-                autocomplete="off"
-                id="message"
-                placeholder="How can I help?"
-              ></textarea>
-              <p class="error"></p>
-            </div>
-
-            <button class="button submit-btn" data-type="primary" type="submit">
-              Send Message
-            </button>
+          <form class="contact-me-form" action="/">
+            <ul>
+              <li class="input-control">
+                <label class="input-control-label" for="userName">Name</label>
+                <div>
+                  <input
+                    class="input-control-input"
+                    autocomplete="off"
+                    id="userName"
+                    type="text"
+                    placeholder="Jane Appleseli"
+                  />
+                  <p class="error"></p>
+                </div>
+              </li>
+              <li class="input-control">
+                <label class="input-control-label" for="mail">
+                  Email Address
+                </label>
+                <div>
+                  <input
+                    class="input-control-input"
+                    autocomplete="off"
+                    id="mail"
+                    type="email"
+                    placeholder="email@example.com"
+                  />
+                  <p class="error"></p>
+                </div>
+              </li>
+              <li class="input-control">
+                <label class="input-control-label" for="msg"> Message </label>
+                <div>
+                  <textarea
+                    class="input-control-input"
+                    autocomplete="off"
+                    id="msg"
+                    placeholder="How can I help?"
+                  ></textarea>
+                  <p class="error"></p>
+                </div>
+              </li>
+              <li>
+                <button class="button submit-btn" type="submit">
+                  Send Message
+                </button>
+                <p class="output"></p>
+              </li>
+            </ul>
           </form>
         </div>
       </section>
