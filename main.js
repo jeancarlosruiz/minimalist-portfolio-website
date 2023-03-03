@@ -27,13 +27,9 @@ let submitBTN = document.querySelector('.submit-btn');
 const inputs = document.querySelectorAll('.input-control-input');
 const output = document.querySelector('.output');
 
-submitBTN.disabled = true;
-
-form.addEventListener('submit', function (e) {
-  e.preventDefault();
-
-  checkInput();
-});
+if (submitBTN) {
+  submitBTN.disabled = true;
+}
 
 //////////////////////////////////////
 // FUNCTIONS TO DO NOT REPEAT CODE //
@@ -43,8 +39,6 @@ function checkInput() {
   let userNameValid = userName.value.trim();
   let emailValid = email.value.trim();
   let textAreaValid = textArea.value.trim();
-
-  const inputs = document.querySelectorAll('.input-control-input');
 
   if (userNameValid === '') {
     setErrorFor(userName, 'This field is required');
@@ -70,6 +64,7 @@ function checkInput() {
     output.textContent = '';
   }
 }
+
 function setErrorFor(input, message) {
   const formControl = input.parentElement;
   const error = formControl.querySelector('.error');
@@ -165,7 +160,19 @@ document.addEventListener('keydown', e => {
 });
 
 // Scroll
-aboutMeBtn.addEventListener('click', e => {
-  e.preventDefault();
-  section1.scrollIntoView({ behavior: 'smooth' });
-});
+if (aboutMeBtn) {
+  aboutMeBtn.addEventListener('click', e => {
+    e.preventDefault();
+    section1.scrollIntoView({ behavior: 'smooth' });
+  });
+}
+
+if (form) {
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+
+    if (e) {
+      checkInput();
+    }
+  });
+}

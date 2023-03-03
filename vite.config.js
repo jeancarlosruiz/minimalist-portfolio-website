@@ -5,11 +5,17 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
   plugins: [htmlPurge()],
+  base: '/minimalist-portfolio-website/',
   build: {
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
-        pages: resolve(__dirname, 'pages/contact.html'),
+        contact: resolve(__dirname, 'pages/contact.html'),
+        portfolio: resolve(__dirname, 'pages/portfolio.html'),
+        bookmark: resolve(__dirname, 'pages/bookmark.html'),
+        fylo: resolve(__dirname, 'pages/fylo.html'),
+        manage: resolve(__dirname, 'pages/manage.html'),
+        insure: resolve(__dirname, 'pages/insure.html'),
       },
     },
   },
