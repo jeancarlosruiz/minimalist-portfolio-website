@@ -503,7 +503,7 @@ body {
   --grid-gap: 2rem;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto auto;
+  grid-template-rows: 1fr auto;
   gap: 1.5rem;
   grid-gap: 1.5rem;
   grid-gap: var(--grid-gap, 1.5rem);
