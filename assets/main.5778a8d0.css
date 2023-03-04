@@ -485,6 +485,20 @@ body {
   border-radius: 0.625rem;
   transition: all 275ms ease-in;
 }
+
+.hamburger-btn.active .bar:nth-child(1) {
+  transform: rotate(-45deg) translateY(12px);
+}
+
+.hamburger-btn.active .bar:nth-child(2) {
+  width: 0;
+  opacity: 0;
+}
+
+.hamburger-btn.active .bar:nth-child(3) {
+  transform: rotate(45deg) translateY(-12px);
+}
+
 .grid-article {
   --grid-gap: 2rem;
   display: grid;
@@ -806,6 +820,12 @@ body {
 .section {
   transition: 0.7s ease-in;
 }
+
+.section-hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+
 .open {
   display: flex;
 }
