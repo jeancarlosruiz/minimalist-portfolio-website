@@ -4,7 +4,7 @@
 ///////////////////////
 
 // Navegation mouseover element
-const nav = document.querySelectorAll('.header-nav');
+const nav = document.querySelectorAll('.nav__container');
 
 // Revealing on scroll
 const allSections = document.querySelectorAll('.section');
@@ -15,7 +15,6 @@ const section1 = document.querySelector('#section1');
 
 // Hamburger elements
 const hamburgerBtn = document.querySelector('.hamburger-btn');
-const headerNav = document.querySelector('.header-nav');
 
 // Contact me form
 
@@ -137,7 +136,7 @@ const handleHover = function (e) {
 // Hamburger function
 const toggleClasses = function () {
   hamburgerBtn.classList.toggle('active');
-  headerNav.classList.toggle('open');
+  nav.forEach(btn => btn.classList.toggle('open'));
 };
 
 /////////////////////////////

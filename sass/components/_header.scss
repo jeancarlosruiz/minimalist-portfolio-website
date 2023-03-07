@@ -7,7 +7,7 @@
   }
 }
 
-.header-nav {
+.nav__container {
   display: none;
   position: absolute;
   align-items: center;
@@ -28,7 +28,7 @@
   }
 }
 
-.nav-links {
+.nav__container--links {
   --flex-row-gap: #{size(32)};
 
   display: flex;
