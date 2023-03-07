@@ -10,9 +10,16 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Frontend Mentor | Minimalist Portfolio</title>
-    
-    <script type="module" crossorigin src="/minimalist-portfolio-website/assets/main.f62790c5.js"></script>
-    <link rel="stylesheet" href="/minimalist-portfolio-website/assets/main.d85c47b2.css">
+
+    <script
+      type="module"
+      crossorigin
+      src="/minimalist-portfolio-website/assets/main.dd33c292.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="/minimalist-portfolio-website/assets/main.2c945e19.css"
+    />
   </head>
 
   <body>
@@ -63,15 +70,19 @@
         </h2>
         <picture>
           <source
-            media="(max-width:650px)"
-            srcset="/minimalist-portfolio-website/assets/image-homepage-hero.d39beb00.jpg 300w, /minimalist-portfolio-website/assets/image-homepage-hero@2x.25264570.jpg 650w"
-          />
-          <source
-            media="(max-width:960px)"
-            srcset="/minimalist-portfolio-website/assets/image-homepage-hero.96f181fa.jpg 750w, /minimalist-portfolio-website/assets/image-homepage-hero@2x.15479be1.jpg 960w"
-          />
-          <source
-            srcset="/minimalist-portfolio-website/assets/image-homepage-hero.660117ee.jpg 1110w, /minimalist-portfolio-website/assets/image-homepage-hero@2x.48ebaadb.jpg 1440w"
+            srcset="
+              /minimalist-portfolio-website/assets/image-homepage-hero.d39beb00.jpg     311w,
+              /minimalist-portfolio-website/assets/image-homepage-hero@2x.25264570.jpg  622w,
+              /minimalist-portfolio-website/assets/image-homepage-hero.96f181fa.jpg     688w,
+              /minimalist-portfolio-website/assets/image-homepage-hero@2x.15479be1.jpg 1376w,
+              /minimalist-portfolio-website/assets/image-homepage-hero.660117ee.jpg    1110w,
+              /minimalist-portfolio-website/assets/image-homepage-hero@2x.48ebaadb.jpg 2220w
+            "
+            sizes="(max-width: 375px) 311px, 
+                    (max-width: 650px) 622px,
+                    (max-width: 720px) 688px,
+                    (max-width: 960px) 1376px,
+                    (max-width: 1110px) 1110px, 2220px"
           />
           <img
             src="assets/images/homepage/desktop/image-homepage-hero.jpg "
@@ -116,16 +127,21 @@
         <article data-type="about" class="grid-article">
           <picture>
             <source
-              media="(max-width:719px)"
-              srcset="/minimalist-portfolio-website/assets/image-homepage-profile.3d7b42ef.jpg 300w, /minimalist-portfolio-website/assets/image-homepage-profile@2x.d2f0484d.jpg 719w"
+              srcset="
+                /minimalist-portfolio-website/assets/image-homepage-profile.3d7b42ef.jpg     311w,
+                /minimalist-portfolio-website/assets/image-homepage-profile@2x.d2f0484d.jpg  622w,
+                /minimalist-portfolio-website/assets/image-homepage-profile.660578e8.jpg     281w,
+                /minimalist-portfolio-website/assets/image-homepage-profile@2x.dde63989.jpg  562w,
+                /minimalist-portfolio-website/assets/image-homepage-profile.6230c0e3.jpg     540w,
+                /minimalist-portfolio-website/assets/image-homepage-profile@2x.b81d9643.jpg 1080w
+              "
+              sizes="(max-width: 375px) 311px, 
+                    (max-width:650px) 622px,
+                    (max-width:720px) 281px,
+                    (max-width:960px) 562px,
+                    (max-width:1110px) 540px, 1080px"
             />
-            <source
-              media="(max-width:960px)"
-              srcset="/minimalist-portfolio-website/assets/image-homepage-profile.660578e8.jpg 750w, /minimalist-portfolio-website/assets/image-homepage-profile@2x.dde63989.jpg 960w"
-            />
-            <source
-              srcset="/minimalist-portfolio-website/assets/image-homepage-profile.6230c0e3.jpg 1110w, /minimalist-portfolio-website/assets/image-homepage-profile@2x.b81d9643.jpg 1440w"
-            />
+
             <img
               src="assets/images/homepage/desktop/image-homepage-profile.jpg "
               alt="Alex Spencer"
@@ -258,6 +274,5 @@
         </nav>
       </div>
     </footer>
-    
   </body>
 </html>
