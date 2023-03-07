@@ -61,24 +61,19 @@
         </h2>
         <picture>
           <source
-            media="(max-width:650px)"
             srcset="
-              assets/images/homepage/mobile/image-homepage-hero.jpg    300w,
-              assets/images/homepage/mobile/image-homepage-hero@2x.jpg 650w
-            "
-          />
-          <source
-            media="(max-width:960px)"
-            srcset="
-              assets/images/homepage/tablet/image-homepage-hero.jpg    750w,
-              assets/images/homepage/tablet/image-homepage-hero@2x.jpg 960w
-            "
-          />
-          <source
-            srcset="
+              assets/images/homepage/mobile/image-homepage-hero.jpg      311w,
+              assets/images/homepage/mobile/image-homepage-hero@2x.jpg   622w,
+              assets/images/homepage/tablet/image-homepage-hero.jpg      688w,
+              assets/images/homepage/tablet/image-homepage-hero@2x.jpg  1376w,
               assets/images/homepage/desktop/image-homepage-hero.jpg    1110w,
-              assets/images/homepage/desktop/image-homepage-hero@2x.jpg 1440w
+              assets/images/homepage/desktop/image-homepage-hero@2x.jpg 2220w
             "
+            sizes="(max-width: 375px) 311px, 
+                    (max-width: 650px) 622px,
+                    (max-width: 720px) 688px,
+                    (max-width: 960px) 1376px,
+                    (max-width: 1110px) 1110px, 2220px"
           />
           <img
             src="assets/images/homepage/desktop/image-homepage-hero.jpg "
@@ -123,25 +118,21 @@
         <article data-type="about" class="grid-article">
           <picture>
             <source
-              media="(max-width:719px)"
               srcset="
-                assets/images/homepage/mobile/image-homepage-profile.jpg    300w,
-                assets/images/homepage/mobile/image-homepage-profile@2x.jpg 719w
+                assets/images/homepage/mobile/image-homepage-profile.jpg      311w,
+                assets/images/homepage/mobile/image-homepage-profile@2x.jpg   622w,
+                assets/images/homepage/tablet/image-homepage-profile.jpg      281w,
+                assets/images/homepage/tablet/image-homepage-profile@2x.jpg   562w,
+                assets/images/homepage/desktop/image-homepage-profile.jpg     540w,
+                assets/images/homepage/desktop/image-homepage-profile@2x.jpg 1080w
               "
+              sizes="(max-width: 375px) 311px, 
+                    (max-width:650px) 622px,
+                    (max-width:720px) 281px,
+                    (max-width:960px) 562px,
+                    (max-width:1110px) 540px, 1080px"
             />
-            <source
-              media="(max-width:960px)"
-              srcset="
-                assets/images/homepage/tablet/image-homepage-profile.jpg    750w,
-                assets/images/homepage/tablet/image-homepage-profile@2x.jpg 960w
-              "
-            />
-            <source
-              srcset="
-                assets/images/homepage/desktop/image-homepage-profile.jpg    1110w,
-                assets/images/homepage/desktop/image-homepage-profile@2x.jpg 1440w
-              "
-            />
+
             <img
               src="assets/images/homepage/desktop/image-homepage-profile.jpg "
               alt="Alex Spencer"
